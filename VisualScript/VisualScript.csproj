@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA126A16-6A35-4A4E-A718-3FAB7E260910}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisualScript</RootNamespace>
+    <AssemblyName>VisualScript</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ast.cs" />
+    <Compile Include="BindingEnvironment.cs" />
+    <Compile Include="Commads\BreakCommand.cs" />
+    <Compile Include="Commads\CaseCommand.cs" />
+    <Compile Include="Commads\CompositeCommand.cs" />
+    <Compile Include="Commads\ContinueCommand.cs" />
+    <Compile Include="Commads\DefaultCommand.cs" />
+    <Compile Include="Commads\DefineClassCommand.cs" />
+    <Compile Include="Commads\DefineEnumCommand.cs" />
+    <Compile Include="Commads\DefineFunctionCommand.cs" />
+    <Compile Include="Commads\ReturnCommand.cs" />
+    <Compile Include="Commads\SwitchCommand.cs" />
+    <Compile Include="Commads\UsingCommand.cs" />
+    <Compile Include="DynamicClass.cs" />
+    <Compile Include="Commads\ExpressionCommand.cs" />
+    <Compile Include="Commads\ForCommand.cs" />
+    <Compile Include="Commads\ForEachCommand.cs" />
+    <Compile Include="Commads\Function.cs" />
+    <Compile Include="DynamicClassicObject.cs" />
+    <Compile Include="DynamicObject.cs" />
+    <Compile Include="Expression\ArithmeticUnaryExpression.cs" />
+    <Compile Include="Expression\ArrayExpression.cs" />
+    <Compile Include="Expression\InvokeArrayExpression.cs" />
+    <Compile Include="Expression\FunctionExpression.cs" />
+    <Compile Include="Commads\IfCommand.cs" />
+    <Compile Include="Commads\SetCommand.cs" />
+    <Compile Include="Commads\VarCommand.cs" />
+    <Compile Include="Commads\VarCompositeCommand.cs" />
+    <Compile Include="Commads\WhileCommand.cs" />
+    <Compile Include="Expression\AndExpression.cs" />
+    <Compile Include="Expression\ArithmeticAvancedExpression.cs" />
+    <Compile Include="Expression\ArithmeticBinaryExpression.cs" />
+    <Compile Include="Expression\ArithmeticOperator.cs" />
+    <Compile Include="Expression\BinaryExpression.cs" />
+    <Compile Include="Expression\CompareExpression.cs" />
+    <Compile Include="Expression\ComparisonOperator.cs" />
+    <Compile Include="Expression\CompositeExpression.cs" />
+    <Compile Include="Expression\ConcatenateExpression.cs" />
+    <Compile Include="Expression\ConstantExpression.cs" />
+    <Compile Include="Expression\DotExpression.cs" />
+    <Compile Include="Expression\EnumExpression.cs" />
+    <Compile Include="Expression\ExpressionUtilities.cs" />
+    <Compile Include="Expression\ICallable.cs" />
+    <Compile Include="Expression\IFLogicExpression.cs" />
+    <Compile Include="Expression\IncrementOperator.cs" />
+    <Compile Include="Expression\InvokeExpression.cs" />
+    <Compile Include="Expression\IObject.cs" />
+    <Compile Include="Expression\NewExpression.cs" />
+    <Compile Include="Expression\NotExpression.cs" />
+    <Compile Include="Expression\NullExpression.cs" />
+    <Compile Include="Expression\ObjectUtilities.cs" />
+    <Compile Include="Expression\OrExpression.cs" />
+    <Compile Include="Expression\SetExpression.cs" />
+    <Compile Include="Expression\TypeofExpression.cs" />
+    <Compile Include="Expression\UnaryExpression.cs" />
+    <Compile Include="Expression\VariableExpression.cs" />
+    <Compile Include="LoopStatus.cs" />
+    <Compile Include="FunctionStatus.cs" />
+    <Compile Include="IClass.cs" />
+    <Compile Include="IClassicObject.cs" />
+    <Compile Include="ILocalCallable.cs" />
+    <Compile Include="Native\ArrayProperties.cs" />
+    <Compile Include="Native\BasicLib.cs" />
+    <Compile Include="Native\EvaluateFunction.cs" />
+    <Compile Include="Native\ExecuteSubroutine.cs" />
+    <Compile Include="Native\IOFileLib.cs" />
+    <Compile Include="Native\MathLib.cs" />
+    <Compile Include="Native\PrintLineSubroutine.cs" />
+    <Compile Include="Native\PrintSubroutine.cs" />
+    <Compile Include="Native\StringLib.cs" />
+    <Compile Include="Native\StringProperties.cs" />
+    <Compile Include="IBindingEnvironment.cs" />
+    <Compile Include="ICallableClass.cs" />
+    <Compile Include="IReadOnly.cs" />
+    <Compile Include="Lexer.cs" />
+    <Compile Include="LocalBindingEnvironment.cs" />
+    <Compile Include="Machine.cs" />
+    <Compile Include="MathObject.cs" />
+    <Compile Include="ObjectEnvironment.cs" />
+    <Compile Include="Parser.cs" />
+    <Compile Include="Predicates.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReaderString.cs" />
+    <Compile Include="StringUtilities.cs" />
+    <Compile Include="TestArray.cs" />
+    <Compile Include="Token.cs" />
+    <Compile Include="TokenType.cs" />
+    <Compile Include="TryCommandFolder\CatchCommand.cs" />
+    <Compile Include="TryCommandFolder\FinallyCommand.cs" />
+    <Compile Include="TryCommandFolder\ErrorTryStatus.cs" />
+    <Compile Include="TryCommandFolder\TryCommand.cs" />
+    <Compile Include="TryCommandFolder\TryCommandComposite.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="VisualScript.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

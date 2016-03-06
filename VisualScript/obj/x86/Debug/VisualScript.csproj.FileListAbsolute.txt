@@ -1,0 +1,10 @@
+C:\Users\luislasonbra\Documents\Visual Studio 2010\Projects\VisualScript\VisualScript\bin\Debug\VisualScript.exe
+C:\Users\luislasonbra\Documents\Visual Studio 2010\Projects\VisualScript\VisualScript\bin\Debug\VisualScript.pdb
+C:\Users\luislasonbra\Documents\Visual Studio 2010\Projects\VisualScript\VisualScript\obj\x86\Debug\VisualScript.exe
+C:\Users\luislasonbra\Documents\Visual Studio 2010\Projects\VisualScript\VisualScript\obj\x86\Debug\VisualScript.pdb
+C:\Users\luislasonbra\Documents\Visual Studio 2010\Projects\VisualScript\VisualScript\obj\x86\Debug\VisualScript.csprojResolveAssemblyReference.cache
+C:\Users\luislasonbra\Documents\Visual Studio 2012\Projects\VisualScript\VisualScript\obj\x86\Debug\VisualScript.exe
+C:\Users\luislasonbra\Documents\Visual Studio 2012\Projects\VisualScript\VisualScript\obj\x86\Debug\VisualScript.pdb
+C:\Users\luislasonbra\Documents\Visual Studio 2012\Projects\VisualScript\VisualScript\bin\Debug\VisualScript.exe
+C:\Users\luislasonbra\Documents\Visual Studio 2012\Projects\VisualScript\VisualScript\bin\Debug\VisualScript.pdb
+C:\Users\luislasonbra\Documents\Visual Studio 2012\Projects\VisualScript\VisualScript\obj\x86\Debug\VisualScript.csprojResolveAssemblyReference.cache
